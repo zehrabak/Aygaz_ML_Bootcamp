@@ -36,5 +36,10 @@ Veri seti üzerinde yapılan deneyler, gözetimli öğrenme algoritmalarının g
 ### Hangi Öğrenme Türü Daha Uygun?
 Bu veri seti için gözetimli öğrenme algoritmaları (özellikle XGBoost) daha iyi performans göstermiştir. Çünkü veri setindeki hedef değişken (Attrition) ile ilişkili açık ve net bir sınıflandırma yapılması gerekmektedir. Gözetimsiz öğrenme ise belirli paternleri ortaya çıkarmak için kullanılabilir, ancak sınıflandırma performansı düşük kalmıştır.
 
+### XGBoost Öğrenme Algoritması Neden Seçtiğim Veri Seti İçin Daha Uygun?
+Bu veri seti çalışanların işten ayrılma (attrition) durumu ve buna etki eden faktörler üzerine kurulu. Bu tür bir veri setinde XGBoost’un en iyi performansı göstermesinin birkaç önemli nedeni var. İlk olarak, veri seti birçok farklı özelliği (maaş, departman, seyahat sıklığı, çalışma süresi gibi) barındırıyor ve XGBoost, bu özellikler arasındaki karmaşık ilişkileri oldukça etkili bir şekilde öğrenebiliyor. Özellikle hedef değişken olan işten ayrılma durumu ile diğer değişkenler arasındaki ince ilişkileri doğru bir şekilde modelleyebiliyor. Bu, veri setinde bulunan çoklu değişkenlerin etkilerini doğru yansıtabilen bir algoritma kullanmanın önemini gösteriyor.
+
+XGBoost’un bu veri setinde öne çıkmasının bir diğer nedeni ise hız ve doğruluk. Hiperparametre optimizasyonuyla daha da geliştirilebilen XGBoost, hızlı bir öğrenme süreci sunarken yüksek doğruluk oranları elde edebiliyor. Ayrıca, işten ayrılma durumu gibi genellikle dengesiz veri setlerinde, yani "evet" ve "hayır" gibi sınıfların dengesiz dağıldığı durumlarda da oldukça başarılı. XGBoost, azınlık sınıfı (işten ayrılanlar) doğru sınıflandırmada etkili olup, precision ve recall gibi önemli ölçütlerde de güçlü sonuçlar veriyor. Bu sebeplerden dolayı, bu veri seti üzerinde en iyi sonuçları sağlayan model XGBoost oldu ve bu modeli seçmem bu güçlü performansından kaynaklanıyor.
+
 ## Kaggle Notebook Linki
-Proje notebook'umuza [buradan ulaşabilirsiniz](https://www.kaggle.com/code/zehrabak/ml-bootcamp2).
+Proje notebook'uma [buradan ulaşabilirsiniz](https://www.kaggle.com/code/zehrabak/ml-bootcamp2).
