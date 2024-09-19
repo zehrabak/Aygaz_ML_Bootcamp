@@ -1,9 +1,9 @@
 # Aygaz ML Bootcamp: Gözetimli ve Gözetimsiz Öğrenme Karşılaştırması
 
 ## Proje Açıklaması
-Bu proje kapsamında, **gözetimli** ve **gözetimsiz öğrenme** algoritmalarını aynı veri seti üzerinde karşılaştırdık. Amaç, hangi algoritmanın veri seti üzerinde daha iyi performans gösterdiğini analiz etmek ve seçilen veri setinin hangi öğrenme türü için daha uygun olduğunu belirlemektir.
+Bu proje kapsamında, **gözetimli** ve **gözetimsiz öğrenme** algoritmalarını aynı veri seti üzerinde karşılaştırdım. Amaç, hangi algoritmanın veri seti üzerinde daha iyi performans gösterdiğini analiz etmek ve seçilen veri setinin hangi öğrenme türü için daha uygun olduğunu belirlemektir.
 
-Kullandığımız veri seti insan kaynakları analitiği üzerine olup, çalışanların işten ayrılma oranlarını ve bu durumla ilişkili diğer değişkenleri incelemektedir.
+Kullandığım veri seti insan kaynakları analitiği üzerine olup, çalışanların işten ayrılma oranlarını ve bu durumla ilişkili diğer değişkenleri incelemektedir.
 
 ### Veri Seti
 Veri seti, çalışanların işten ayrılma (Attrition) durumu, maaş, departman, seyahat sıklığı gibi değişkenleri içermektedir. Hem sınıflandırma hem de kümeleme algoritmalarının uygulanabileceği yapıda hazırlanmıştır.
@@ -14,7 +14,7 @@ Veri seti, çalışanların işten ayrılma (Attrition) durumu, maaş, departman
 ## Algoritmalar
 
 ### 1. Gözetimli Öğrenme (Supervised Learning)
-Gözetimli öğrenme kapsamında, **Lojistik Regresyon, Random Forest, XGBoost** gibi sınıflandırma algoritmalarını kullandık. Bu algoritmalar, çalışanların işten ayrılma olasılığını tahmin etmeye çalıştı.
+Gözetimli öğrenme kapsamında, **Lojistik Regresyon, Random Forest, XGBoost** gibi sınıflandırma algoritmalarını kullandım. Bu algoritmalar, çalışanların işten ayrılma olasılığını tahmin etmeye çalıştı.
 
 #### En İyi Performans Gösteren Model: **XGBoost**
 - **Accuracy:** %97.4
@@ -25,7 +25,7 @@ Gözetimli öğrenme kapsamında, **Lojistik Regresyon, Random Forest, XGBoost**
 XGBoost modeli, hem doğruluk oranı hem de diğer değerlendirme metrikleri açısından en iyi performansı gösterdi.
 
 ### 2. Gözetimsiz Öğrenme (Unsupervised Learning)
-Gözetimsiz öğrenme algoritmalarında ise **K-Means** ve **Hierarchical Clustering** kullandık. Bu algoritmalar, çalışanların özelliklerine göre kümeler oluşturarak belirli paternler tespit etmeye çalıştı.
+Gözetimsiz öğrenme algoritmalarında ise **K-Means** ve **Hierarchical Clustering** kullandım. Bu algoritmalar, çalışanların özelliklerine göre kümeler oluşturarak belirli paternler tespit etmeye çalıştı.
 
 #### K-Means Sonuçları
 Kümeleme işlemi sonucunda, çalışanlar maaşlarına, departmanlarına ve seyahat sıklıklarına göre anlamlı kümeler oluşturdu. Ancak, modelin performansı sınıflandırma algoritmalarına kıyasla daha düşük kaldı ve verideki paternleri net bir şekilde tespit etmek zor oldu.
